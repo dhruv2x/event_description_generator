@@ -96,60 +96,87 @@ class _ChatGPTPageState extends State<ChatGPTPage> {
               controller: apikeyController,
               decoration: InputDecoration(
                 labelText: 'API Key',
+                filled: true,
+                fillColor: Colors.grey[200],
               ),
             ),
+            SizedBox(height: 16.0),
             TextField(
               controller: nameController,
               decoration: InputDecoration(
                 labelText: 'Event Name',
+                filled: true,
+                fillColor: Colors.grey[200],
               ),
             ),
             TextField(
               controller: dateController,
               decoration: InputDecoration(
                 labelText: 'Event Date',
+                filled: true,
+                fillColor: Colors.grey[200],
               ),
             ),
             TextField(
               controller: timeController,
               decoration: InputDecoration(
                 labelText: 'Event Time',
+                filled: true,
+                fillColor: Colors.grey[200],
               ),
             ),
             TextField(
               controller: venueController,
               decoration: InputDecoration(
                 labelText: 'Event Location',
+                filled: true,
+                fillColor: Colors.grey[200],
               ),
             ),
             TextField(
               controller: speakerController,
               decoration: InputDecoration(
                 labelText: 'Key Speaker/Performer',
+                filled: true,
+                fillColor: Colors.grey[200],
               ),
             ),
             TextField(
               controller: priceController,
               decoration: InputDecoration(
                 labelText: 'Ticket Price',
+                filled: true,
+                fillColor: Colors.grey[200],
               ),
             ),
             TextField(
               controller: categoryController,
               decoration: InputDecoration(
                 labelText: 'Event Category',
+                filled: true,
+                fillColor: Colors.grey[200],
               ),
             ),
             TextField(
               controller: additionalController,
               decoration: InputDecoration(
                 labelText: 'Additional Details',
+                filled: true,
+                fillColor: Colors.grey[200],
               ),
             ),
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: onSendMessage,
-              child: Text('Generate Event Description'),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.blue,
+              ),
+              child: Text(
+                'Generate Event Description',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
             ),
             SizedBox(height: 20),
             Text(
